@@ -15,6 +15,11 @@ const MongoDbConfig = {
   }
 }
 
+// For Jest Test cases.
+if(process.env.TEST_DB) {
+  MongoDbConfig.connOptions.dbName = `${MongoDbConfig.connOptions.dbName}-test`
+}
+
 const BasicConfig = {
   port:  process.env.PORT || 3000,
   apiBaseURI: (process.env.API_BASE_URI || 'http://localhost:3000') + '/v1',
