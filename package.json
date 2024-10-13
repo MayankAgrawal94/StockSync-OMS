@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "populate": "node src/scripts/populateData.js",
     "test": "TEST_DB=true jest"
