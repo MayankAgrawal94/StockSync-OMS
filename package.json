@@ -1,0 +1,40 @@
+{
+  "name": "stock-sync-oms",
+  "version": "1.0.0",
+  "description": "Inventory and Order Management System",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "populate": "node src/scripts/populateData.js",
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayankAgrawal94/StockSync-OMS.git"
+  },
+  "keywords": [
+    "Inventory",
+    "Stock",
+    "Order",
+    "Management",
+    "System"
+  ],
+  "author": "Mayank Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayankAgrawal94/StockSync-OMS/issues"
+  },
+  "homepage": "https://github.com/MayankAgrawal94/StockSync-OMS#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
